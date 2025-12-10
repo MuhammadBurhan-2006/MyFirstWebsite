@@ -1,15 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Web Page</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Victoria's Journal - Everyday Discoveries</title>
+    <style>
+        body {
+            background: grey;
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            width: 800px;
+            margin: 30px auto;
+            background: #3b3bc2;
+            border: 2px solid #c75d5d;
+            padding: 15px 0;
+        }
+        #header {
+            background: #6e97b9;
+            border-radius: 12px 12px 0 0;
+            padding: 14px;
+            margin-bottom: 12px;
+        }
+        .title {
+            font-size: 2.2em;
+            color: #3c91d6;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            float: left;
+        }
+        .subtitle {
+            float: right;
+            color: #4887c2;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin-top: 22px;
+        }
+        #main {
+            clear: both;
+            padding: 16px;
+        }
+        .box {
+            background: #7dbfd1;
+            border: 2px solid #75b5d8;
+            margin-bottom: 18px;
+            padding: 16px;
+            border-radius: 7px;
+            overflow: hidden;
+        }
+        #hobbies {
+            float: left;
+            width: 200px;
+            margin-right: 22px;
+            font-family: Verdana, sans-serif;
+            font-weight: bold;
+        }
+        .entry {
+            margin-left: 240px;
+            min-height: 130px;
+        }
+        .date {
+            display: block;
+            font-size: 1.18em;
+            color: #3576ac;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .topic {
+            color: #6ca956;
+            font-family: Georgia, serif;
+            font-weight: bold;
+        }
+        .content {
+            float: left;
+            width: 66%;
+        }
+        .entry-img {
+            float: right;
+            width: 120px;
+            text-align: right;
+        }
+        .entry-img img {
+            border: 1px solid rgb(146, 146, 231);
+            border-radius: 4px;
+            box-shadow: 2px 2px 6px rgb(158, 158, 214);
+        }
+        p {
+            font-size: 1em;
+            font-family: Arial, sans-serif;
+            font-weight: normal;
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This is my first HTML and CSS project uploaded using GitHub Desktop.</p>
-  <p>So lets start with this.</p>
-  
+    <div id="container">
+        <div id="header">
+            <span class="title">Victoria's Journal</span>
+            <span class="subtitle">Everyday Discoveries</span>
+        </div>
+        <div id="main">
+            <div class="box" id="hobbies">
+                <b>Hobbies</b>
+                <ul>
+                    <li>Reading Mystery Novels</li>
+                    <li>Painting Landscapes</li>
+                    <li>Baking Bread</li>
+                </ul>
+            </div>
+            <div class="entry box">
+                <span class="date">11/18/25: <span class="topic">Morning Walks</span></span>
+                <div class="content">
+                    <p>
+                        This morning, I walked along the river and watched the sun rise. The quiet made it easy to think, and I took some photos with my phone. It’s a peaceful start to what will surely be a productive day!
+                    </p>
+                </div>
+                <div class="entry-img">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=120" alt="Morning Walk" width="120">
+                </div>
+            </div>
+            <div class="entry box">
+                <span class="date">11/16/25: <span class="topic">Trying New Recipes</span></span>
+                <div class="content">
+                    <p>
+                        I decided to experiment with baking bread at home. After a few tries, I managed to make a pretty good sourdough. Baking is really relaxing, and the house smells amazing now!
+                    </p>
+                </div>
+                <div class="entry-img">
+                    <img src="https://assets.bonappetit.com/photos/5c62e4a3e81bbf522a9579ce/16:9/w_4000,h_2250,c_limit/milk-bread.jpg" alt="Homemade Bread" width="120">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
